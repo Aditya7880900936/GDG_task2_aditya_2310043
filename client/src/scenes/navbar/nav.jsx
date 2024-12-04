@@ -39,7 +39,7 @@ const Navbar = () => {
   const primaryLight = theme.palette.primary.light;
   const alt = theme.palette.background.alt;
 
-  const fullName = user ? `${user.firstName} ${user.lastName}` : "Guest";
+  const fullName = user ? `${user.fullName}` : "Guest";
 
 
   return (
@@ -57,7 +57,7 @@ const Navbar = () => {
             },
           }}
         >
-          Sociopedia
+          Ghantagram
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
